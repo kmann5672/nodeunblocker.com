@@ -77,7 +77,7 @@ app.get("/no-js", function(req, res) {
     res.redirect(unblockerConfig.prefix + site);
 });
 
-const port = process.env.PORT || process.env.VCAP_APP_PORT || 8080;
+const port = process.env.PORT || process.env.VCAP_APP_PORT || 80;
 
 app.listen(port, function() {
     console.log(`node unblocker process listening at http://localhost:${port}/`);
